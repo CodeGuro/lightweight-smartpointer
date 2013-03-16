@@ -1,0 +1,7 @@
+Debug/
+Release/
+ipch/
+smartptrs.opensdf
+smartptrs.sdf
+smartptrs/Debug
+smartptrs/Release
