@@ -1,5 +1,9 @@
 #include "lightweight smartpointer.hpp"
-#include "buff_t.hpp"
+
+typedef struct 
+{
+	unsigned char buff[500];
+} buff_t, *pbuff_t;
 typedef lightweight_smartpointer<buff_t> light_buff;
 int main(int argc, char **argv)
 {

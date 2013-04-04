@@ -23,8 +23,5 @@
     <ClInclude Include="lightweight smartpointer.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="buff_t.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
   </ItemGroup>
 </Project>

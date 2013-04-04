@@ -1,0 +1,9 @@
+THE SOFTWARE IS PROVIDED ÅAS IS, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL NORMAN WALSH OR ANY OTHER CONTRIBUTOR BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+
+lightweight-smartpointer
+========================
+
+A lightweight smartpointer library for C++ that provides an easy and lightweight method to manage memory.
+Best used with a custom garbage collection. (To do this, you must provide your own methods to get and dispose resources in "lightweight smartpointer.hpp" via explicit template specialization In addition, any garbage collection class must also be included.)
+This provides as an alternative to inheretance and virtual function calls by reducing the overhead accomedated with virtual functions. Templates are preprocessed and therefore all pertaining functions are linked and resolved statically, as opposed to dynamically.
