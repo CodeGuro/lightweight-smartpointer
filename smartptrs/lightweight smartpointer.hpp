@@ -41,7 +41,7 @@ public:
 		data= src.data;
 		return *this;
 	}
-	~lightweight_smartpointer()
+	virtual ~lightweight_smartpointer()
 	{
 		if(data)
 		{
@@ -91,14 +91,12 @@ public:
 private:
 	Body<T> * data;
 
-	Body<T> * get_resource();
-	void dispose_resource(Body<T>*);
+	virtual Body<T> * get_resource()
+	{
+		return new Body<T>();
+	}
+	virtual void dispose_resource(Body<T> * object)
+	{
+		delete object;
+	}
 };
-template<typename T> typename lightweight_smartpointer<T>::Body<T> * lightweight_smartpointer<T>::get_resource()
-{
-	return new Body<T>();
-}
-template<typename T> void lightweight_smartpointer<T>::dispose_resource(Body<T> * object)
-{
-	delete object;
-}
